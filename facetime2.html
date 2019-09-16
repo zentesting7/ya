@@ -1,0 +1,13 @@
+<html>
+
+<body>
+    <a id="callme" href="facetime://+1234" style="display:none">click</a>
+    <script>
+        var t = document.getElementById("callme");
+        var fe = document.createEvent("MouseEvents");
+        fe.initEvent("click", true, true);
+        t.dispatchEvent(fe);
+    </script>
+</body>
+
+</html>
